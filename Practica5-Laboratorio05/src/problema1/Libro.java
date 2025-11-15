@@ -1,16 +1,25 @@
+
 package problema1;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Libro {
-    public String titulo;
-    public String isbn;
-    public List<Pagina> paginas;
+    private String titulo;
+    private String isbn;
+    private List<Pagina> paginas;
 
     public Libro(String titulo, String isbn) {
         this.titulo = titulo;
         this.isbn = isbn;
         this.paginas = new ArrayList<>();
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void agregarPagina(int numero, String contenido) {
+        paginas.add(new Pagina(numero, contenido));
     }
 
     public void leer() {
@@ -24,10 +33,9 @@ public class Libro {
         System.out.println("Préstamo registrado: " + titulo);
     }
 
-    // Clase interna Pagina (composición)
     public class Pagina {
-        public int numero;
-        public String contenido;
+        private int numero;
+        private String contenido;
 
         public Pagina(int numero, String contenido) {
             this.numero = numero;

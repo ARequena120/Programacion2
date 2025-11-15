@@ -1,13 +1,14 @@
+
 package problema1;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Biblioteca {
-    public String nombre;
-    public List<Libro> librosDisponibles;
-    public List<Autor> autoresRegistrados;
-    public List<Prestamo> prestamosActivos;
-    public Horario horarioAtencion;
+    private String nombre;
+    private List<Libro> librosDisponibles;
+    private List<Autor> autoresRegistrados;
+    private List<Prestamo> prestamosActivos;
+    private Horario horarioAtencion;
 
     public Biblioteca(String nombre) {
         this.nombre = nombre;
@@ -16,7 +17,14 @@ public class Biblioteca {
         this.prestamosActivos = new ArrayList<>();
     }
 
-    // Métodos principales
+    public List<Prestamo> getPrestamosActivos() {
+        return prestamosActivos;
+    }
+
+    public void setHorarioAtencion(Horario horario) {
+        this.horarioAtencion = horario;
+    }
+
     public void agregarLibro(Libro libro) {
         librosDisponibles.add(libro);
     }
@@ -44,11 +52,10 @@ public class Biblioteca {
         System.out.println("Biblioteca cerrada - Préstamos cancelados");
     }
 
-    // Clase interna Horario (composición)
     public class Horario {
-        public String dias;
-        public String horaApertura;
-        public String horaCierre;
+        private String dias;
+        private String horaApertura;
+        private String horaCierre;
 
         public Horario(String dias, String apertura, String cierre) {
             this.dias = dias;

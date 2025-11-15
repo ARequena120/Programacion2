@@ -1,7 +1,9 @@
+
 package problema1;
+
 public class Autor {
-    public String nombre;
-    public String nacionalidad;
+    private String nombre;
+    private String nacionalidad;
 
     public Autor(String nombre, String nacionalidad) {
         this.nombre = nombre;
