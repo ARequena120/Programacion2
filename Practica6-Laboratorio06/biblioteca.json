@@ -1,0 +1,70 @@
+{
+  "nombre": "Nueva Biblioteca",
+  "librosDisponibles": [
+    {
+      "titulo": "el vagabundo",
+      "isbn": "123",
+      "stock": 3,
+      "autor": {
+        "nombre": "juan",
+        "nacionalidad": "la paz",
+        "fechaNacimiento": "1085-04-07"
+      }
+    },
+    {
+      "titulo": "noche buena",
+      "isbn": "234",
+      "stock": 2,
+      "autor": {
+        "nombre": "pedro",
+        "nacionalidad": "aleman",
+        "fechaNacimiento": "1999-07-15"
+      }
+    },
+    {
+      "titulo": "narnia",
+      "isbn": "456",
+      "stock": 6,
+      "autor": {
+        "nombre": "ana",
+        "nacionalidad": "griego",
+        "fechaNacimiento": "2002-07-15"
+      }
+    }
+  ],
+  "autores": [
+    {
+      "nombre": "juan",
+      "nacionalidad": "la paz",
+      "fechaNacimiento": "1085-04-07"
+    },
+    {
+      "nombre": "pedro",
+      "nacionalidad": "aleman",
+      "fechaNacimiento": "1999-07-15"
+    },
+    {
+      "nombre": "ana",
+      "nacionalidad": "griego",
+      "fechaNacimiento": "2002-07-15"
+    }
+  ],
+  "estudiantesRegistrados": [
+    {
+      "codigo": "123",
+      "nombre": "adria requen",
+      "fechaRegistro": "2025-12-01"
+    },
+    {
+      "codigo": "432",
+      "nombre": "fabian",
+      "fechaRegistro": "2025-12-02"
+    },
+    {
+      "codigo": "444",
+      "nombre": "lucas",
+      "fechaRegistro": "2025-12-02"
+    }
+  ],
+  "prestamosActivos": []
+}
